@@ -1,0 +1,34 @@
+# Sum of n terms
+
+def n_sum(number):
+
+    if number == 1:
+        return 1
+
+    return number + n_sum(number - 1)
+
+print(n_sum(5))
+
+
+
+# Print from N to 1
+
+def nonlinearprint(n):
+
+    if n < 1:
+        return
+
+    print(n, end = " ")
+    return nonlinearprint(n - 1)
+
+# print 1 to
+
+def linearprint(i, n):
+
+    if i > n:
+        return
+
+    print(i, end = ' ')
+    return linearprint(i + 1, n)
+
+linearprint(1,8)
