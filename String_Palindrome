@@ -1,0 +1,14 @@
+
+# String Palindrome using Recursion
+
+def rec_palindrome(str):
+
+    if len(str) <= 1:
+        return True
+
+    if str[0] != str[len(str) - 1]:
+        return False
+
+    return rec_palindrome(str[1:-1])
+
+print(rec_palindrome('madam'))
